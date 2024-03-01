@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+input {
+  width: 18rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.infoDiv {
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoDiv input {
+  width: 30rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 0 1rem;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(175, 174, 174);
+  width: 80vw;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 0;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+
+.edu-section,
+.exp-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(175, 174, 174);
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+
+.buttonDiv {
+  display: flex;
+  gap: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.add-item {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1.2rem;
+}
+
+.add-item:hover {
+  color: green;
+  transform: scale(1.1);
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+
+  width: 100%;
+}
+
+.content-table thead tr {
+  background-color: blueviolet;
+  color: white;
+  text-align: left;
+  font-weight: 600;
+}
+
+.content-table th,
+.content-table td {
+  padding: 8px;
+  white-space: pre-wrap;
+}
+
+.content-table tr {
+  border-bottom: 1px solid lightgrey;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: lightgray;
+}
+
+.longText {
+  max-width: 300px;
+}
+
+.header {
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.logoDiv {
+  position: absolute;
+  top: 0.5rem;
+  left: 3rem;
+}
+
+.expDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.expContent {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.expContent input {
+  width: 30rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 0 1rem;
+}
+
+.expContent textarea {
+  width: 30rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.remove-btn {
+  color: #ff4b4b;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease;
+  font-size: 0.6rem;
+}
+
+.remove-btn:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.eduDiv {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.eduDiv input {
+  width: 30rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 0 1rem;
+}
+
+.eduDiv select {
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+.eduContent {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+    overflow-x: hidden;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .infoDiv {
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoDiv input {
+    width: 17rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175, 174, 174);
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+  }
+
+  .info-section h2 {
+    font-size: 1rem;
+  }
+
+  .edu-section,
+  .exp-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175, 174, 174);
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+  }
+
+  .exp-section h2 {
+    font-size: 1rem;
+  }
+
+  .edu-section h2 {
+    font-size: 1rem;
+  }
+
+  .buttonDiv {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .add-item {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1.2rem;
+  }
+
+  .add-item:hover {
+    color: green;
+    transform: scale(1.1);
+  }
+
+  .content-table {
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.5rem;
+
+    width: 100%;
+  }
+
+  .content-table thead tr {
+    background-color: blueviolet;
+    color: white;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .content-table th,
+  .content-table td {
+    padding: 0.5rem;
+    white-space: pre-wrap;
+  }
+
+  .content-table tr {
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: lightgray;
+  }
+
+  .longText {
+    max-width: 300px;
+  }
+
+  .header {
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .logoDiv {
+    position: absolute;
+    top: 0.3rem;
+    left: 1.5rem;
+  }
+
+  .logoDiv img {
+    width: 40px;
+  }
+
+  .expDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .expContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .expContent input {
+    width: 17rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+
+  .expContent textarea {
+    width: 17rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .remove-btn {
+    color: #ff4b4b;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease;
+    font-size: 0.6rem;
+  }
+
+  .remove-btn:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+  }
+
+  .eduDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eduDiv input {
+    width: 17rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+
+  .eduDiv select {
+    border-radius: 1rem;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+
+  .eduContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

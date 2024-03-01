@@ -1,0 +1,249 @@
+.primary-btn {
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* background: green; */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: rgb(42, 175, 42);
+}
+
+.primary-btn,
+.primary-btn span {
+  transition: 200ms;
+}
+
+.primary-btn .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+
+.primary-btn .icon {
+  position: absolute;
+  border-left: 1px solid green;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-btn .fa {
+  color: green;
+  font-size: 1rem;
+}
+
+.primary-btn:hover {
+  background: rgb(50, 236, 50);
+}
+
+.primary-btn:hover .text {
+  color: transparent;
+}
+
+.primary-btn:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.primary-btn:focus {
+  outline: none;
+}
+
+.primary-btn:active .icon svg {
+  transform: scale(0.8);
+}
+
+.secondary-btn {
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  /* background: rgb(248, 101, 101); */
+}
+
+.secondary-btn,
+.secondary-btn span {
+  transition: 200ms;
+}
+
+.secondary-btn .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+
+.secondary-btn .icon {
+  position: absolute;
+  border-left: 1px solid rgb(121, 2, 2);
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary-btn .fa {
+  color: white;
+  font-size: 1rem;
+}
+
+.secondary-btn:hover {
+  background: rgb(250, 76, 76);
+}
+
+.secondary-btn:hover .text {
+  color: transparent;
+}
+
+.secondary-btn:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.secondary-btn:focus {
+  outline: none;
+}
+
+.secondary-btn:active .icon svg {
+  transform: scale(0.8);
+}
+
+@media screen and (max-width: 600px) {
+  .primary-btn {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* background: green; */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: rgb(42, 175, 42);
+  }
+
+  .primary-btn,
+  .primary-btn span {
+    transition: 200ms;
+  }
+
+  .primary-btn .text {
+    transform: translateX(15px);
+    color: white;
+    font-weight: bold;
+  }
+
+  .primary-btn .icon {
+    position: absolute;
+    border-left: 1px solid green;
+    transform: translateX(70px);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .primary-btn .fa {
+    color: green;
+    font-size: 1rem;
+  }
+
+  .primary-btn:hover {
+    background: rgb(50, 236, 50);
+  }
+
+  .primary-btn:hover .text {
+    color: transparent;
+  }
+
+  .primary-btn:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+  }
+
+  .primary-btn:focus {
+    outline: none;
+  }
+
+  .primary-btn:active .icon svg {
+    transform: scale(0.8);
+  }
+
+  .secondary-btn {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    /* background: rgb(248, 101, 101); */
+  }
+
+  .secondary-btn,
+  .secondary-btn span {
+    transition: 200ms;
+  }
+
+  .secondary-btn .text {
+    transform: translateX(15px);
+    color: white;
+    font-weight: bold;
+  }
+
+  .secondary-btn .icon {
+    position: absolute;
+    border-left: 1px solid rgb(121, 2, 2);
+    transform: translateX(70px);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .secondary-btn .fa {
+    color: white;
+    font-size: 1rem;
+  }
+
+  .secondary-btn:hover {
+    background: rgb(250, 76, 76);
+  }
+
+  .secondary-btn:hover .text {
+    color: transparent;
+  }
+
+  .secondary-btn:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+  }
+
+  .secondary-btn:focus {
+    outline: none;
+  }
+
+  .secondary-btn:active .icon svg {
+    transform: scale(0.8);
+  }
+}
