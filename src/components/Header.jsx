@@ -5,7 +5,8 @@ function Header() {
   return (
     <div className="header">
       <div className="logoDiv">
-        <img src="src/image/favicon.png" alt="logo" width={50} />
+        {/* <img src="src/image/favicon.png" alt="logo" width={50} /> */}
+        <img src="/favicon.png" alt="logo" width={50} />
       </div>
       <h1>CV Application</h1>
     </div>
